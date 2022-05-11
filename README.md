@@ -1,3 +1,7 @@
+# Project Statement
+This project was completed with myself and my capstone team for our senior project at Tennessee Technological University. You can access the original repo [here](https://github.com/ORNL-AMO/ORNL-Weather). Please refer to the original Readme below.   
+
+
 # ORNL-Weather
 
 
