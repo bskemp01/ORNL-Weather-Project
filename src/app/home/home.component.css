@@ -1,0 +1,509 @@
+body {
+  /* overall default styling for this page */
+  color: #2c386b;
+  font-size: 24px;
+}
+
+.DbDate {
+  display: block;
+  position: absolute;
+  align-content: flex-end;
+  top: 5px;
+  right: 5px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.tooltip {
+  position: relative;
+  display: center;
+  padding-right: 3px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  width: 300px;
+  background-color: white;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  padding-top: 18px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+  cursor: auto;
+  padding-top: 18px;
+}
+
+.tooltip .tooltiptext {
+  top: -75px;
+  left: 105%;
+}
+
+table {
+  font-family: "Lato", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  opacity: 1;
+  background: white;
+}
+
+tr {
+  height: 1px;
+  background: white;
+}
+
+td {
+  align-content: center;
+  background: white;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+#scrollable-area {
+  position: absolute;
+  z-index: 2;
+  margin-top: 37px;
+  width: 200px;
+  height: 180px;
+  border: 1.5px solid #587656;
+  /* border-top: 0px; */
+  overflow-y: scroll;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: white;
+  background: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+}
+
+#scrollable-area::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+  height: 9px;
+}
+
+#scrollable-area::-webkit-scrollbar-corner {
+  background: none;
+  border-bottom-right-radius: 20px;
+}
+
+#scrollable-area::-webkit-scrollbar-track {
+  border: 0px;
+}
+
+#scrollable-area::-webkit-scrollbar-thumb {
+  /* background-color: rgb(0, 0, 0); */
+  border-radius: 20px;
+  background: gray;
+}
+
+.zipParent {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  justify-content: center;
+  min-height: 1px;
+  height: auto;
+  margin: auto;
+}
+
+#zipcode + div {
+  display: none;
+}
+
+#zipBox:focus-within #dropdown {
+  display: flex;
+}
+
+.startParent {
+  position: relative;
+  min-height: 1px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-right: 60px;
+  justify-content: center;
+  z-index: 2;
+}
+
+.endParent {
+  position: relative;
+  min-height: 1px;
+  width: auto;
+  height: auto;
+  display: block;
+  margin-left: 60px;
+  justify-content: center;
+  z-index: 2;
+}
+
+span {
+  position: static;
+  top: 10px;
+  right: 28px;
+  font-size: 11px;
+  color: #2c386b;
+  transition: ease-out 0.3s;
+  z-index: 2;
+}
+
+h1 {
+  margin-top: -12px;
+  font-size: 15px;
+}
+
+p {
+  font-size: 10px;
+  padding: 0px;
+  margin-top: -10px;
+}
+
+.startDate {
+  /* styling for start date button */
+
+  padding: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 9px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+
+  font-size: 17.4px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3px;
+  width: 200px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.endDate {
+  /* styling for end date button */
+
+  padding: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 9px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+
+  font-size: 17.4px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 3px;
+  width: 200px;
+
+  z-index: 1;
+  cursor: pointer;
+}
+
+.distance {
+  z-index: 1;
+}
+
+.labelStartDate {
+  /* margin for start date label */
+  margin-right: 120px;
+  margin-left: 6%;
+  z-index: 1;
+}
+
+.labelEndDate {
+  /* margin for end date label */
+  margin-left: 120px;
+  margin-right: 6%;
+  z-index: 1;
+}
+
+.zip {
+  /* zip code and distance input boxes styling and padding */
+  position: absolute;
+  width: 220px;
+  padding: 10px;
+  border-radius: 9px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+  justify-content: center;
+  font-size: 18.4px;
+  text-align: center;
+  margin-top: 5px;
+  z-index: 1;
+}
+
+#distance {
+  background-color: #a9a9a9;
+}
+
+.button {
+  /* default button */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.center {
+  /* centering */
+  display: flex;
+  justify-content: center;
+  float: center;
+}
+
+.button1 {
+  /* color and styling of station select button */
+  border-radius: 60px;
+  background-color: #587656;
+}
+
+.button:hover {
+  /* change color on station select button hover */
+  background-color: #839c7c;
+}
+
+/* Remove annoying blue highlight when input box selected */
+input:focus {
+  outline: black;
+}
+
+input[type="date"] {
+  padding: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 9px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+  justify-content: center;
+  font-size: 17.4px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: #2c386b;
+  cursor: pointer;
+}
+
+select {
+  width: 240px;
+  padding: 10px;
+  border-radius: 9px;
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+  justify-content: center;
+  font-size: 19.1px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url("../../assets/arrow.png") 96% / 6% no-repeat white;
+}
+
+label {
+  z-index: 1;
+}
+
+select:focus {
+  outline: black;
+  z-index: 1;
+}
+
+.alertcenter {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  z-index: 1;
+
+  color: #cc0033;
+  font-size: 13.5px;
+  line-height: 15px;
+
+  display: flex;
+  justify-content: center;
+  float: center;
+  text-align: center;
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+  z-index: 0;
+  justify-content: center;
+}
+
+@media screen and (max-height: 625px) {
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .tooltip {
+    position: relative;
+    display: center;
+    padding-right: 1.15px;
+    z-index: 4;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    width: 270px;
+    background-color: white;
+    border: 1.5px solid #587656;
+    color: #2c386b;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    padding-top: 18px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 4;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    cursor: auto;
+    padding-top: 18px;
+  }
+
+  .tooltip .tooltiptext {
+    top: 30px;
+    left: -85px;
+    z-index: 4;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .DbDate {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .tooltip {
+    position: relative;
+    display: center;
+    padding-right: 1.15px;
+    z-index: 4;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+    width: 200px;
+    background-color: white;
+    border: 1.5px solid #587656;
+    color: #2c386b;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    padding-top: 18px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 4;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    cursor: auto;
+    padding-top: 18px;
+  }
+
+  .tooltip .tooltiptext {
+    top: 30px;
+    left: -150px;
+    z-index: 4;
+  }
+
+  .startParent {
+    position: relative;
+    min-height: 1px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-right: 15px;
+    margin-left: 5px;
+    justify-content: center;
+  }
+
+  .endParent {
+    position: relative;
+    min-height: 1px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: 15px;
+    margin-right: 5px;
+    justify-content: center;
+  }
+
+  .startDate {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .endDate {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .labelStartDate {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+
+  .labelEndDate {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+}

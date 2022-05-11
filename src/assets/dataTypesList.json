@@ -1,0 +1,462 @@
+[
+ {
+   "DataTypes": "HourlyAltimeterSetting",
+   "Description": "Atmospheric pressure reduced to sea level using temperature profile of the standard atmosphere. Given in inches of Mercury (in Hg)."
+ },
+ {
+   "DataTypes": "HourlyDewPointTemperature",
+   "Description": "This is the dew point temperature. It is given here in whole degrees Fahrenheit."
+ },
+ {
+   "DataTypes": "HourlyDryBulbTemperature",
+   "Description": "This is the dry-bulb temperature and is commonly used as the standard air temperature reported. It is given here in whole degrees Fahrenheit."
+ },
+ {
+   "DataTypes": "HourlyPrecipitation",
+   "Description": "Amount of precipitation in inches to hundredths over the past hour. For certain automated stations, precipitation will be reported at sub-hourly intervals (e.g. every 15 or 20 minutes) as an accumulated amount of all precipitation within the preceding hour. A 'T' indicates a trace amount of precipitation"
+ },
+ {
+   "DataTypes": "HourlyPresentWeatherType",
+   "Description": "Weather types describe precipitation or obstructions to vision occurring at the time of observation. These are reported by automated sensors (AU or AW) and manually (MW) by human observation."
+ },
+ {
+   "DataTypes": "HourlyPressureChange",
+   "Description": "Difference in pressure over the past 3 hours. Prefixed with a + or - to indicate increase or decrease in pressure respectively. Given in inches of Mercury (in Hg)."
+ },
+ {
+   "DataTypes": "HourlyPressureTendency",
+   "Description": "Pressure tendency (In general a 0 through 3 here indicates an increase in pressure over previous 3 hours and a 5 through 8 indicates a decrease over the previous 3 hours and 4 indicates no change during the previous 3 hours)."
+ },
+ {
+   "DataTypes": "HourlyRelativeHumidity",
+   "Description": "This is the relative humidity given to the nearest whole percentage."
+ },
+ {
+   "DataTypes": "HourlySkyConditions",
+   "Description": "A report of each cloud layer"
+ },
+ {
+   "DataTypes": "HourlySeaLevelPressure",
+   "Description": "Sea level pressure given in inches of Mercury (in Hg)."
+ },
+ {
+   "DataTypes": "HourlyStationPressure",
+   "Description": "Atmospheric pressure observed at the station during the time of observation. Given in inches of Mercury (in Hg)."
+ },
+ {
+   "DataTypes": "HourlyVisibility",
+   "Description": "The horizontal distance an object can be seen and identified given in whole miles. Note visibilities less than 3 miles are usually given in smaller increments (e.g. 2.5)."
+ },
+ {
+   "DataTypes": "HourlyWetBulbTemperature",
+   "Description": "This is the wet-bulb temperature. It is given here in whole degrees Fahrenheit."
+ },
+ {
+   "DataTypes": "HourlyWindDirection",
+   "Description": "Wind direction from true north using compass directions (e.g. 360 = true north, 180 = south, 270 = west, etc.). Note: A direction of 000 is given for calm winds."
+ },
+ {
+   "DataTypes": "HourlyWindGustSpeed",
+   "Description": "Wind gusts occurring during time of observation. Given in miles per hour (mph)."
+ },
+ {
+   "DataTypes": "HourlyWindSpeed",
+   "Description": "Speed of the wind at the time of observation given in miles per hour (mph)."
+ },
+ {
+   "DataTypes": "Sunrise",
+   "Description": "Time of sunrise using a 24-hour clock (Local Standard Time Daylight Savings Time is not used)"
+ },
+ {
+   "DataTypes": "Sunset",
+   "Description": "Time of sunset using a 24-hour clock (Local Standard Time Daylight Savings Time is not used)"
+ },
+ {
+   "DataTypes": "DailyAverageDewPointTemperature",
+   "Description": "Average daily dew point temperature (in whole degrees Fahrenheit)"
+ },
+ {
+   "DataTypes": "DailyAverageDryBulbTemperature",
+   "Description": "Average temperature for the day (in whole degrees Fahrenheit). This is based on the arithmetic average of the maximum and minimum temperature for the day"
+ },
+ {
+   "DataTypes": "DailyAverageRelativeHumidity",
+   "Description": "Average daily relative humidity (in whole percent)"
+ },
+ {
+   "DataTypes": "DailyAverageSeaLevelPressure",
+   "Description": "Daily average sea level pressure (in inches of mercury, to hundredths)"
+ },
+ {
+   "DataTypes": "DailyAverageStationPressure",
+   "Description": "Daily average station pressure (in inches of mercury, to hundredths)"
+ },
+ {
+   "DataTypes": "DailyAverageWetBulbTemperature",
+   "Description": "Average daily wet-bulb temperature (in whole degrees Fahrenheit)"
+ },
+ {
+   "DataTypes": "DailyAverageWindSpeed",
+   "Description": "Daily average wind speed in miles per hour miles per hour, to tenths"
+ },
+ {
+   "DataTypes": "DailyCoolingDegreeDays",
+   "Description": "Cooling degree days (in whole degrees using a 65 degree F base)"
+ },
+ {
+   "DataTypes": "DailyDepartureFromNormalAverageTemperature",
+   "Description": "Average temperatures departure from (1981-2010) normal temperature (in whole Fahrenheit degrees using - to indicate below normal"
+ },
+ {
+   "DataTypes": "DailyHeatingDegreeDays",
+   "Description": "Heating degree days (in whole degrees using a 65 degree F base)"
+ },
+ {
+   "DataTypes": "DailyMaximumDryBulbTemperature",
+   "Description": "Maximum temperature for the day (in whole degrees Fahrenheit). An asterisk (*) is used to designate when a daily maximum temperature is also the extreme maximum for the month."
+ },
+ {
+   "DataTypes": "DailyMinimumDryBulbTemperature",
+   "Description": "Minimum temperature for the day (in whole degrees Fahrenheit). An asterisk (*) is used to designate when a daily minimum temperature is also the extreme minimum for the month."
+ },
+ {
+   "DataTypes": "DailyPeakWindDirection",
+   "Description": "direction of wind during peak wind speed for the day given as direction from which wind was blowing using a 360 degree compass with respect to true north (e.g north = 360, south = 180, etc.)"
+ },
+ {
+   "DataTypes": "DailyPeakWindSpeed",
+   "Description": "peak wind speed for the day (in whole miles per hour)"
+ },
+ {
+   "DataTypes": "DailyPrecipitation",
+   "Description": "Water equivalent amount of precipitation for the day (in inches to hundredths). This is all types of precipitation (melted and frozen). T indicates trace amount of precipitation. If left blank, precipitation amount is unreported."
+ },
+ {
+   "DataTypes": "DailySnowDepth",
+   "Description": "Daily reading of snow on ground (in whole inches). T indicates trace amount."
+ },
+ {
+   "DataTypes": "DailySnowfall",
+   "Description": "Daily amount of snowfall (in inches to the tenths). T indicates trace amount"
+ },
+ {
+   "DataTypes": "DailySustainedWindDirection",
+   "Description": "direction of wind during maximum sustained wind speed for the day given as direction from which wind was blowing using a 360 degree compass with respect to true north"
+ },
+ {
+   "DataTypes": "DailySustainedWindSpeed",
+   "Description": "maximum sustained wind speed for the day (in whole miles per hour). Note: For U.S. locations this is the fastest reported speed for the day that is sustained for at least 2 minutes for years 1994 and later. For earlier years it is the fastest reported speed sustained for at least 1 minute"
+ },
+ {
+   "DataTypes": "DailyWeather",
+   "Description": "Daily occurrences of weather types. The 2-digit number in each designation corresponds to the WT (weather type code) used in GHCN-Daily dataset."
+ },
+ {
+   "DataTypes": "MonthlyAverageRH",
+   "Description": "Average Relative Humdiity for the Month"
+ },
+ {
+   "DataTypes": "MonthlyDaysWithGT001Precip",
+   "Description": "The number of days with .01 inch (.25 mm) or more precipitation."
+ },
+ {
+   "DataTypes": "MonthlyDaysWithGT010Precip",
+   "Description": "The number of days with .10 inch (2.5 mm) or more precipitation."
+ },
+ {
+   "DataTypes": "MonthlyDaysWithGT32Temp",
+   "Description": "The number of days with minimum temperature 32 F (0.0 C) or lower."
+ },
+ {
+   "DataTypes": "MonthlyDaysWithGT90Temp",
+   "Description": "The number of days with minimum temperature 90 F (32.2 C) or higher, except for Alaska70 F (21.1 C) or higher."
+ },
+ {
+   "DataTypes": "MonthlyDaysWithLT0Temp",
+   "Description": "The number of days with maximum temperature 0 F (-17.8 C) or lower."
+ },
+ {
+   "DataTypes": "MonthlyDaysWithLT32Temp",
+   "Description": "The number of days with maximum temperature 32 F (0.0 C) or lower"
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalAverageTemperature",
+   "Description": "indicates if the dekadal average temperatures were above or below the 30-year normal. It is calculated for each grid cell by subtracting the average air temperature estimated by AFWA from the 30-year normal (from 1961-1990)."
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalCoolingDegreeDays",
+   "Description": "defined as a departure of the mean daily temperature from a given standard: one degree day for each degree of departure above (or below) the base temperature during one day. The degree day is related to the outside temperature and is not related to time."
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalHeatingDegreeDays",
+   "Description": "defined as a departure of the mean daily temperature from a given standard: one degree day for each degree of departure above (or below) the base temperature during one day. The degree day is related to the outside temperature and is not related to time."
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalMaximumTemperature",
+   "Description": "indicates if the dekadal maximum temperatures were above or below the 30-year normal. It is calculated for each WMO station by subtracting the maximum air temperature recorded at the station from the 30-year normal (1961-1990) for the station."
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalMinimumTemperature",
+   "Description": "The difference in degrees Fahrenheit between the forecast nighttime minimum temperature and the average minimum temperature for that station."
+ },
+ {
+   "DataTypes": "MonthlyDepartureFromNormalPrecipitation",
+   "Description": "The cumulative rainfall departure (CRD) from normal rainfall is a concept sometimes utilized to evaluate the temporal correlation of rainfall with surface water or ground water levels."
+ },
+ {
+   "DataTypes": "MonthlyDewpointTemperature",
+   "Description": "The average dew point temperature for a given period, typically for the day or month, derived from other data fields"
+ },
+ {
+   "DataTypes": "MonthlyGreatestPrecip",
+   "Description": "The depth of LIQUID-PRECIPITATION for the 24-hour period. UNITS: millimeters "
+ },
+ {
+   "DataTypes": "MonthlyGreatestPrecipDate",
+   "Description": "The dates of occurrence of LIQUID-PRECIPITATION, given as the begin-end date for the 24-hour period, for up to 3 occurrences; e.g., 0405 indicates 24-hour period on days 04-05."
+ },
+ {
+   "DataTypes": "MonthlyGreatestSnowDepth",
+   "Description": "The depth of GREATEST SNOW DEPTH FOR THE MONTH. UNITS: centimeters"
+ },
+ {
+   "DataTypes": "MonthlyGreatestSnowDepthDate",
+   "Description": "The dates of occurrence of SNOW-DEPTH, given as the date for each occurrence, for up to 3 occurrences; e.g., 041016 indicates days 04, 10, and 16."
+ },
+ {
+   "DataTypes": "MonthlyGreatestSnowfall",
+   "Description": "The depth of SNOW-ACCUMULATION for the 24-hour period. UNITS: centimeters"
+ },
+ {
+   "DataTypes": "MonthlyGreatestSnowfallDate",
+   "Description": "The dates of occurrence of SNOW-ACCUMULATION, given as the begin-end date for the 24-hour period, for up to 3 occurrences; e.g., 0405 indicates 24-hour period on days 04-05."
+ },
+ {
+   "DataTypes": "MonthlyMaxSeaLevelPressureValue",
+   "Description": "The maximum sea level pressure at the observation point for the month. UNITS: Hectopascals"
+ },
+ {
+   "DataTypes": "MonthlyMaxSeaLevelPressureValueDate",
+   "Description": "The date-time of occurrence of the pressure value, given as the date-time; e.g., 051500 indicates day 05, time 1500."
+ },
+ {
+   "DataTypes": "MonthlyMaxSeaLevelPressureValueTime",
+   "Description": "The date-time of occurrence of the pressure value, given as the date-time; e.g., 051500 indicates day 05, time 1500."
+ },
+ {
+   "DataTypes": "MonthlyMaximumTemperature",
+   "Description": "The maximum air temperature for a given period as reported by the station (ie, not derived from other data fields)."
+ },
+ {
+   "DataTypes": "MonthlyMeanTemperature",
+   "Description": "The mean air temperature for a given period as reported by the station (ie, not derived from other data fields)."
+ },
+ {
+   "DataTypes": "MonthlyMinSeaLevelPressureValue",
+   "Description": "The minimum sea level pressure at the observation point for the month. UNITS: Hectopascals"
+ },
+ {
+   "DataTypes": "MonthlyMinSeaLevelPressureValueDate",
+   "Description": "The date-time of occurrence of the pressure value, given as the date-time; e.g., 051500 indicates day 05, time 1500."
+ },
+ {
+   "DataTypes": "MonthlyMinSeaLevelPressureValueTime",
+   "Description": "The date-time of occurrence of the pressure value, given as the date-time; e.g., 051500 indicates day 05, time 1500."
+ },
+ {
+   "DataTypes": "MonthlyMinimumTemperature",
+   "Description": "The minimum air temperature for a given period as reported by the station (ie, not derived from other data fields)."
+ },
+ {
+   "DataTypes": "MonthlySeaLevelPressure",
+   "Description": "The average sea level pressure for the month at the observation point. UNITS: Hectopascals"
+ },
+ {
+   "DataTypes": "MonthlyStationPressure",
+   "Description": "The average pressure at the observation point for the month. UNITS: Hectopascals"
+ },
+ {
+   "DataTypes": "MonthlyTotalLiquidPrecipitation",
+   "Description": "The depth of LIQUID-PRECIPITATION for the month. UNITS: millimeters"
+ },
+ {
+   "DataTypes": "MonthlyTotalSnowfall",
+   "Description": "The depth of SNOW-ACCUMULATION for the month. UNITS: millimeters"
+ },
+ {
+   "DataTypes": "MonthlyWetBulb",
+   "Description": "The average wet bulb temperature for a given period, typically for the day or month, derived from other data fields"
+ },
+ {
+   "DataTypes": "AWND",
+   "Description": "average daily wind speed from NOAA NCDC DAILY FSOD: Daily weather station data primarily from the United States and parts of South Pacific and Europe"
+ },
+ {
+   "DataTypes": "CDSD",
+   "Description": "Cloud Droplet Size Distribution"
+ },
+ {
+   "DataTypes": "CLDD",
+   "Description": "The total cooling degree days for a given period, typically for the day or month, as reported by the station (ie, not derived from other data fields). These data use the 65-degree Fahrenheit base as traditionally used for degree days"
+ },
+ {
+   "DataTypes": "DSNW",
+   "Description": "Number days with snow depth > 1 inch."
+ },
+ {
+   "DataTypes": "HDSD",
+   "Description": "Heating Degree Days Season to Date"
+ },
+ {
+   "DataTypes": "HTDD",
+   "Description": "The total heating degree days for a given period, typically for the day or month, as reported by the station (ie, not derived from other data fields). These data use the 65-degree Fahrenheit base as traditionally used for degree days"
+ },
+ {
+   "DataTypes": "NormalsCoolingDegreeDay",
+   "Description": "It is the number of degrees that a day's average temperature is above 65 degrees Fahrenheit"
+ },
+ {
+   "DataTypes": "NormalsHeatingDegreeDay",
+   "Description": "It is the number of degrees that a day's average temperature is below 40 degrees Fahrenheit"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate005",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (5 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate010",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (10 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate015",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (15 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate020",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (20 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate030",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (30 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate045",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (45 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate060",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (60 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate080",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (80 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate100",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (100 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate120",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (120 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate150",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (150 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationEndDate180",
+   "Description": "The ending date of occurrence of the event , given as the date-time in GMT; e.g., 051010 indicates 1010 Z-time on day 05 of the month. (180 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue005",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (5 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue010",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (10 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue015",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (15 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue020",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (20 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue030",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (30 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue045",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (45 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue060",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (60 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue080",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (80 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue100",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (100 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue120",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (120 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue150",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (150 Minutes)"
+ },
+ {
+   "DataTypes": "ShortDurationPrecipitationValue180",
+   "Description": "gives the greatest amount of precipitation to fall in the month over 12 different periods given in minutes. (180 Minutes)"
+ },
+ {
+   "DataTypes": "REM",
+   "Description": "The numeric and character (plain language) remarks are provided if they exist. The data will vary in length and are identified in the applicable data definition. The remarks section has a maximum length of 515 (512 characters plus a 3 character section identifier) characters."
+ },
+ {
+   "DataTypes": "BackupDirection",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupDistance",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupDistanceUnit",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupElements",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupElevation",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupEquipment",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupLatitude",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupLongitude",
+   "Description": ""
+ },
+ {
+   "DataTypes": "BackupName",
+   "Description": ""
+ },
+ {
+   "DataTypes": "WindEquipmentChangeDate",
+   "Description": ""
+ }
+]

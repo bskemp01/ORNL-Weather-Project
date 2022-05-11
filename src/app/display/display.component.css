@@ -1,0 +1,748 @@
+div {
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  color: #2b376b;
+  font-size: 30px;
+  font-family: "Lato", sans-serif;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  border-radius: 6px;
+  background: white;
+}
+
+.right {
+  /* right side align */
+  display: flex;
+  justify-content: right;
+
+  margin-right: 7%;
+  margin-left: 10%;
+}
+
+td {
+  padding: 8px;
+  align-content: center;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  padding: 8px;
+  text-align: center;
+  align-content: center;
+  background-color: #5a7255;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-collapse: separate;
+}
+
+.empty_rate {
+  background-color: #839c7c !important;
+}
+
+#empty_rate_text {
+  text-align: center;
+  align-content: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #dbdada;
+}
+
+tr:hover {
+  background-color: #839c7c;
+}
+
+#tabsLabel {
+  display: block;
+  padding: 8px;
+  min-height: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#scrollable-area {
+  position: absolute;
+  width: 100%;
+  height: 425px;
+  border: 2px solid #2b376b;
+  overflow-y: scroll;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  background: white;
+  margin-top: -2px;
+}
+
+.center {
+  /* centering */
+  display: flex;
+  justify-content: center;
+  float: center;
+}
+
+.tableParent {
+  position: relative;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  width: 85%;
+  height: 490px;
+}
+
+.rowsRemoved {
+  margin-left: 15%;
+  margin-top: -55px;
+  font-size: 15px;
+}
+
+.tabOverflow {
+  overflow: auto;
+  overflow: overlay;
+  white-space: nowrap;
+  width: 85%;
+  justify-content: center;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.tabOverflow::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+  height: 9px;
+  background: white;
+  border-radius: 50px;
+}
+
+#scrollable-area::-webkit-scrollbar-corner {
+  background: white;
+  border-bottom-right-radius: 20px;
+}
+
+.tabOverflow::-webkit-scrollbar-track {
+  border-radius: 50px;
+  border: double black 1px;
+}
+
+.tabOverflow::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.tabs {
+  position: relative;
+  font-size: 18.5px;
+  display: inline-block;
+  align-content: center;
+  text-align: left;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.tabs:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tabs:nth-child(odd) {
+  background-color: #dbdada;
+}
+
+.tabs:hover {
+  background-color: #839c7c;
+}
+
+.tab {
+  border: 2px solid #2b376b;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: inline-block;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 10px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 10%;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.button:hover {
+  background-color: #839c7c;
+}
+
+.button1 {
+  border-radius: 60px;
+  background-color: #587656;
+  z-index: 1;
+  margin-right: 20px;
+}
+
+.loading {
+  /* padding: 8px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Hourglass Loader */
+.cell {
+  flex-basis: 50%;
+  padding: 1.5em;
+}
+
+.pl,
+.pl:before,
+.pl:after {
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.pl {
+  margin: 0 auto 1.5em auto;
+  position: relative;
+  width: 3em;
+  height: 3em;
+}
+
+.pl:before,
+.pl:after {
+  background: currentColor;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform-origin: 50% 100%;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.pl-name {
+  text-align: center;
+  font-size: medium;
+}
+
+.pl-hourglass {
+  animation-name: hourglassA;
+  background: rgb(200, 200, 200);
+  clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%, 50% 50%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 50%, 100% 100%, 0 100%, 50% 50%);
+}
+
+.pl-hourglass:before,
+.pl-hourglass:after {
+  position: static;
+  clip-path: none;
+  -webkit-clip-path: none;
+}
+
+.pl-hourglass:before {
+  animation-name: hourglassB;
+}
+
+.pl-hourglass:after {
+  animation-name: hourglassC;
+}
+
+@keyframes hourglassA {
+  from,
+  75% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes hourglassB {
+  from {
+    transform: scaleY(1);
+  }
+
+  50%,
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes hourglassC {
+  from {
+    transform: scaleY(0);
+  }
+
+  50%,
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  justify-content: center;
+}
+
+@media screen and (max-height: 750px) {
+  .footer {
+    display: none;
+  }
+}
+
+.controls {
+  position: relative;
+  display: block;
+  justify-content: center;
+  width: 85%;
+  min-height: 1px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+#backButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  float: center;
+  margin-top: -12px;
+
+  z-index: 2;
+}
+
+#pagingValue {
+  display: flex;
+  justify-content: right;
+  float: right;
+
+  margin-left: 71%;
+  z-index: 2;
+}
+
+#typeValue {
+  display: flex;
+  justify-content: right;
+  float: right;
+
+  margin-left: 2%;
+  z-index: 2;
+}
+
+select {
+  width: 135px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 9px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  border: 1.5px solid #587656;
+  color: #2c386b;
+  position: center;
+  justify-content: center;
+  font-size: 17.4px;
+  text-align: center;
+  margin-top: 5px;
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: url("../../assets/arrow.png") 96% / 6% no-repeat white;
+  z-index: 1;
+}
+
+.custom-pagination {
+  z-index: 2;
+  width: auto;
+}
+
+.custom-pagination .page-number {
+  display: inline-flex;
+  background: white;
+  margin: 0px 0px;
+  border-radius: 8%;
+  border: 1px solid #587656;
+  color: #2c386b;
+  z-index: 1;
+}
+
+.page-number-label {
+  display: inline-flex;
+  padding-top: 8px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 8%;
+  z-index: 2 !important;
+  cursor: pointer;
+}
+
+.page-number.current {
+  background: #dbdada !important;
+  border: 1px solid #587656;
+  padding-top: 8px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 8%;
+  z-index: 1;
+}
+
+.page-number:hover {
+  background-color: #839c7c;
+}
+
+.page-number span {
+  display: block;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+}
+
+.pagination-previous,
+.pagination-next {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.centerPagi {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  float: center;
+  margin-bottom: 5px;
+  height: 0px;
+  z-index: 0 !important;
+}
+
+.arrow {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 8px;
+  height: 14px;
+  cursor: pointer;
+}
+
+#scrollable-area::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+  height: 9px;
+}
+
+#scrollable-area::-webkit-scrollbar-corner {
+  background: none;
+  border-bottom-right-radius: 20px;
+}
+
+#scrollable-area::-webkit-scrollbar-track {
+  border-radius: 50px;
+  border: double black 1px;
+}
+
+#scrollable-area::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 800px) {
+  .right {
+    /* right side align */
+    display: flex;
+    justify-content: right;
+
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .rowsRemoved {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: center;
+  }
+
+  .controls {
+    width: 90%;
+  }
+
+  #backButton {
+    width: 100px;
+    font-size: 15px;
+    top: -4px;
+  }
+
+  .custom-pagination {
+    z-index: 2;
+    width: 250px;
+    margin-top: 0px;
+  }
+
+  .custom-pagination .page-number {
+    display: inline-flex;
+    background: white;
+    margin: 0px 0px;
+    border-radius: 8%;
+    border: 1px solid #587656;
+    color: #2c386b;
+    z-index: 1;
+  }
+
+  .page-number-label {
+    display: inline-flex;
+    padding-top: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 8%;
+    z-index: 2 !important;
+    cursor: pointer;
+  }
+
+  .page-number.current {
+    background: #dbdada !important;
+    border: 1px solid #587656;
+    padding-top: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 8%;
+    z-index: 1;
+  }
+
+  .page-number:hover {
+    background-color: #839c7c;
+  }
+
+  .page-number span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    font-size: 15px;
+  }
+
+  .pagination-previous,
+  .pagination-next {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .centerPagi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: center;
+    margin-bottom: 0px;
+    height: 0px;
+    z-index: 0 !important;
+  }
+
+  .arrow {
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 0px;
+    height: 10px;
+    cursor: pointer;
+  }
+
+  #pagingValue {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  #typeValue {
+    width: 100px;
+    font-size: 15px;
+    margin-top: -18px;
+  }
+}
+
+input:focus {
+  outline: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .right {
+    /* right side align */
+    display: flex;
+    justify-content: right;
+
+    margin-right: 0;
+    margin-left: 10%;
+  }
+
+  .rowsRemoved {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: center;
+  }
+
+  .controls {
+    width: 90%;
+  }
+
+  #backButton {
+    width: 100px;
+    font-size: 15px;
+    top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #pagingValue {
+    display: flex;
+    justify-content: right;
+    float: right;
+
+    margin-left: 2%;
+    z-index: 2;
+  }
+
+  #typeValue {
+    margin-top: 5px !important;
+    display: flex;
+    justify-content: right;
+    float: right;
+
+    margin-left: 2%;
+    z-index: 2;
+  }
+
+  .custom-pagination {
+    z-index: 2;
+    width: 250px;
+    margin-top: -30px;
+  }
+
+  .custom-pagination .page-number {
+    display: inline-flex;
+    background: white;
+    margin: 0px 0px;
+    border-radius: 8%;
+    border: 1px solid #587656;
+    color: #2c386b;
+    z-index: 1;
+  }
+
+  .page-number-label {
+    display: inline-flex;
+    padding-top: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 8%;
+    z-index: 2 !important;
+    cursor: pointer;
+  }
+
+  .page-number.current {
+    background: #dbdada !important;
+    border: 1px solid #587656;
+    padding-top: 4px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 8%;
+    z-index: 1;
+  }
+
+  .page-number:hover {
+    background-color: #839c7c;
+  }
+
+  .page-number span {
+    display: block;
+    width: 22px;
+    height: 22px;
+    font-size: 15px;
+  }
+
+  .pagination-previous,
+  .pagination-next {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .centerPagi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: center;
+    margin-bottom: 0px;
+    height: 0px;
+    z-index: 0 !important;
+  }
+
+  .arrow {
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-top: 0px;
+    height: 10px;
+    cursor: pointer;
+  }
+
+  #pagingValue {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  #typeValue {
+    width: 100px;
+    font-size: 15px;
+    margin-top: -18px;
+  }
+}
+
+input:focus {
+  outline: black;
+}
